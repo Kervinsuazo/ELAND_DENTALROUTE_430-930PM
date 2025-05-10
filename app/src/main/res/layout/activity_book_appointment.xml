@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp"
+    android:background="@drawable/wavebackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/book_title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:gravity="center" />
+
+
+        <TextView style="@style/LabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/doctor_specialization_name" />
+        <EditText
+            android:id="@+id/etSpecialization"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/specialization_hint"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF" />
+
+
+        <TextView style="@style/LabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/doctor_label" />
+        <EditText
+            android:id="@+id/etDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/doctor_hint"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF" />
+
+
+        <TextView style="@style/LabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fees_label" />
+        <EditText
+            android:id="@+id/etFees"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/fees_hint"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF" />
+
+
+        <TextView style="@style/LabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date_label" />
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/date_hint"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF" />
+
+
+        <TextView style="@style/LabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_label" />
+        <EditText
+            android:id="@+id/etTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/time_hint"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF" />
+
+
+        <TextView style="@style/LabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location_label" />
+
+
+        <ImageView
+            android:id="@+id/mapPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/maps" />
+
+
+        <TextView
+            android:id="@+id/tvLocationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button"
+            android:backgroundTint="#00BCD4"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

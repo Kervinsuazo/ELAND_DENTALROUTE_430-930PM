@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wavebackground"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="User | Appointment History"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Patient Name" />
+
+        <EditText
+            android:id="@+id/etPatientname"
+            style="@style/ReadOnlyField"
+            android:minHeight="48dp"
+            android:hint="Patient Name" />
+
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Specialization" />
+
+        <EditText
+            android:id="@+id/etSpecialization"
+            style="@style/ReadOnlyField"
+            android:minHeight="48dp"
+            android:hint="Pediatric Dentist " />
+
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Consultancy Fees" />
+
+        <EditText
+            android:id="@+id/etCFees"
+            style="@style/ReadOnlyField"
+            android:minHeight="48dp"
+            android:hint="Fees" />
+
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Date" />
+
+        <EditText
+            android:id="@+id/etCDate"
+            style="@style/ReadOnlyField"
+            android:minHeight="48dp"
+            android:hint="Date" />
+
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Time" />
+
+        <EditText
+            android:id="@+id/etCTime"
+            style="@style/ReadOnlyField"
+            android:minHeight="48dp"
+            android:hint="Time" />
+
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Appointment Creation Date" />
+
+        <EditText
+            android:id="@+id/etCreationDate"
+            style="@style/ReadOnlyField"
+            android:minHeight="48dp"
+            android:hint="Date" />
+
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Time" />
+
+        <EditText
+            android:id="@+id/etCreationTime"
+            style="@style/ReadOnlyField"
+            android:minHeight="48dp"
+            android:hint="Time" />
+
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Current Status" />
+
+        <EditText
+            android:id="@+id/etPStatus"
+            style="@style/ReadOnlyField"
+            android:minHeight="48dp"
+            android:hint="Status" />
+
+
+        <TextView
+            style="@style/LabelStyle"
+            android:text="Action" />
+
+        <EditText
+            android:id="@+id/etPAction"
+            style="@style/ReadOnlyField"
+            android:minHeight="48dp"
+            android:hint="Action" />
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Back"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

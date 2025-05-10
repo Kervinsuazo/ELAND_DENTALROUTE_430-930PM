@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Proj</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+        <string name="book_title">User | Book Appointment</string>
+        <string name="specialization_label">Doctor Specialization Name</string>
+        <string name="doctor_label">Doctors</string>
+        <string name="fees_label">Consultancy Fees</string>
+        <string name="date_label">Date</string>
+        <string name="time_label">Time</string>
+        <string name="location_label">Doctors Location</string>
+        <string name="submit_button">Submit</string>
+        <string name="specialization_hint">Enter Specialization</string>
+        <string name="doctor_hint">Enter Doctor</string>
+        <string name="fees_hint">Consultancy Fees</string>
+        <string name="date_hint">Select Date</string>
+        <string name="time_hint">Select Time</string>
+        <string name="location_name">UCMed</string>
+    <string name="doctor_specialization_name">Doctor Specialization Name</string>
+</resources>
