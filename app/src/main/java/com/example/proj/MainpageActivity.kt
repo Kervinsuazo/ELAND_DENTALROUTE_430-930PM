@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.dentalr.BookAppointment
+import com.example.proj.AppointmentHistoryPatientActivity
 import com.example.proj.MedicalHistory
 
 class UserMainpage : AppCompatActivity() {
@@ -25,6 +26,13 @@ class UserMainpage : AppCompatActivity() {
         val medicalHistoryMenu = findViewById<LinearLayout>(R.id.menuMedicalHistory)
         medicalHistoryMenu.setOnClickListener {
             val intent = Intent(this, MedicalHistory::class.java)
+            startActivity(intent)
+        }
+
+        val appointmentHistoryMenu = findViewById<LinearLayout>(R.id.menuAppointmentHistory)
+
+        appointmentHistoryMenu.setOnClickListener {
+            val intent = Intent(this, AppointmentHistoryPatientActivity::class.java)
             startActivity(intent)
         }
 

@@ -1,5 +1,7 @@
 package com.example.dentalroute.api
 
+import com.example.proj.LoginRequest
+import com.example.dentistapp.model.UserResponse
 import com.example.proj.AppointmentResponse
 import com.example.proj.BookAppointmentRequest
 import com.example.proj.BookAppointmentResponse
@@ -16,6 +18,12 @@ interface ApiService {
 
     @POST("profile")
     fun getProfile(): Call<ProfileResponse>
+
+    @POST("login")
+    fun loginUser(
+        @Body request: LoginRequest
+    ): Call<UserResponse>
+
 
     @POST("appointments")
     fun getAppointments(): Call<AppointmentResponse>

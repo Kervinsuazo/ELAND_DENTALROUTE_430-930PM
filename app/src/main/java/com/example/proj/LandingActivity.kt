@@ -22,7 +22,7 @@ class LandingActivity : AppCompatActivity() {
         val signupBtn = findViewById<Button>(R.id.signupButton)
 
         loginBtn.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
         signupBtn.setOnClickListener {
